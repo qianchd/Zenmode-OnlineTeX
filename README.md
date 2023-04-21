@@ -11,3 +11,6 @@ Beautify the overleaf editor.
 
 - Header hiding (There is a issue that we can not reopen the header ..)
 <img width="1256" alt="image" src="https://user-images.githubusercontent.com/48825214/233638974-bd031672-7640-4966-b857-0911a0344df3.png">
+
+Compare with the original theme:)
+<img width="1260" alt="image" src="https://user-images.githubusercontent.com/48825214/233640047-89fd90bd-d493-4f2f-b655-66fbf1b59877.png">
