@@ -1,6 +1,13 @@
 # tampermonkey-overleaf
 Beautify the overleaf editor.
 
-- Better scrollbar in windows system;
-- Full-screen botton "F";
+- Thin scrollbar in windows system;
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/48825214/233638663-8735c5ce-22d1-49ca-aba8-28f2ca0e38f0.png">
+
+- Full-screen botton "F" and Esc botton "E";
+
 - Line-number toggling button "L";
+<img width="1260" alt="image" src="https://user-images.githubusercontent.com/48825214/233638100-c93b8288-7c87-4b16-8f92-c27762eeb98b.png">
+
+- Header hiding (There is a issue that we can not reopen the header ..)
+<img width="1256" alt="image" src="https://user-images.githubusercontent.com/48825214/233638974-bd031672-7640-4966-b857-0911a0344df3.png">
