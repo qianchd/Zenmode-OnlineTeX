@@ -1,6 +1,11 @@
 # tampermonkey-overleaf
 Beautify the overleaf editor.
 
+## Installation
+- Install the [tampermonkey](https://tampermonkey.net) extension in the chromium-based browser or firefox browser. The [kiwi browser](https://kiwibrowser.com/) is recommended for iPad and Android tablet.
+- Copy the js script to the tampermonkey extension.
+
+## Overview
 - Thin scrollbar in windows system;
 <img width="653" alt="image" src="https://user-images.githubusercontent.com/48825214/233638663-8735c5ce-22d1-49ca-aba8-28f2ca0e38f0.png">
 
