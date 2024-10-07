@@ -1,5 +1,5 @@
 # tampermonkey-overleaf
-Beautify the overleaf editor.
+Zenmode in the overleaf editor.
 
 ## Installation
 - Install the [tampermonkey](https://tampermonkey.net) extension in the chromium-based browser or firefox browser. The [kiwi browser](https://kiwibrowser.com/) is recommended for iPad and Android tablet.
