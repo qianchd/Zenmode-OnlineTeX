@@ -4,7 +4,7 @@
 // @version      0.1.1
 // @description  beautiful overleaf
 // @author       You
-// @match        https://www.overleaf.com/*
+// @match       https://www.overleaf.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -35,8 +35,9 @@ function addStyle() {
     background-color: rgba(0, 0, 0, .5);
 }
 
-botton {
-    font-size: 4px;
+.mybotton {
+    background-color: transparent!important;
+    font-size:15px;
 }
 `;
 
@@ -51,9 +52,10 @@ botton {
     setTimeout(function () {
     var obj=document.getElementsByClassName("cm-gutter-lint")[0];
     obj.remove();
-    console.log(obj);
-                var button3 = document.createElement("button");
+    //console.log(obj);
+    var button3 = document.createElement("button");
         button3.id = "id003";
+        button3.className = "mybotton";
         button3.textContent = "F";
         button3.style.width = "38px";
         button3.style.height = "38px";
@@ -74,6 +76,7 @@ botton {
         }
         var button4 = document.createElement("button");
         button4.id = "id004";
+        button4.className = "mybotton";
         button4.textContent = "E";
         button4.style.width = "38px";
         button4.style.height = "38px";
@@ -92,6 +95,7 @@ botton {
         }
         var button2 = document.createElement("button");
         button2.id = "id002";
+        button2.className = "mybotton";
         button2.textContent = "L";
         button2.style.width = "38px";
         button2.style.height = "38px";
@@ -109,6 +113,7 @@ botton {
         }
         var button = document.createElement("button");
         button.id = "id001";
+        button.className = "mybotton";
         button.textContent = "H";
         button.style.width = "38px";
         button.style.height = "38px";
@@ -119,12 +124,12 @@ botton {
             let main=document.getElementById("ide-body");
             let pane=document.getElementsByClassName("ui-layout-pane")
             // tb.remove();
-            if(tb.style.display=="none"){
-                // tb.style.display='flex';
-                // main.style.top = "40";
+            if(tb.style.visibility=="hidden"){
+                //main.style.top = "40";
+                //tb.style.visibility="visible";
             }
             else{
-                tb.style.display="none";
+                tb.style.visibility="hidden";
                 main.style.top = "0";
                 for(obj in pane){
                     obj.style.height = 700;
