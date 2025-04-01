@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Beautify overleaf
+// @name         Overleaf-zenmode
 // @namespace    http://tampermonkey.net/
 // @version      0.1.1
-// @description  beautiful overleaf
+// @description  zenmode for overleaf
 // @author       You
 // @match       https://www.overleaf.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
@@ -121,16 +121,13 @@ function addStyle() {
             let main=document.getElementById("ide-body");
             let pane=document.getElementsByClassName("ui-layout-pane")
             // tb.remove();
-            if(tb.style.visibility=="hidden"){
+            if(tb.style.display=="none"){
                 //main.style.top = "40";
                 //tb.style.visibility="visible";
+                tb.style.display="flex";
             }
             else{
-                tb.style.visibility="hidden";
-                main.style.top = "0";
-                for(obj in pane){
-                    obj.style.height = 700;
-                }
+                tb.style.display="none";
             }
 		    return;
 	    };
