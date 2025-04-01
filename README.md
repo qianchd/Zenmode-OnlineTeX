@@ -1,5 +1,5 @@
-# tampermonkey-overleaf
-Zenmode in the overleaf editor.
+# Zenmode-OnlineTeX
+Zenmode for online tex editors, including overleaf and texpage.
 
 ## Installation
 - Install the [tampermonkey](https://tampermonkey.net) extension in the Chromium-based or Firefox browser. The [kiwi browser](https://kiwibrowser.com/) is recommended for iPad and Android tablets.
