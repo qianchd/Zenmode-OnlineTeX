@@ -64,10 +64,18 @@ function addStyle() {
         button3.style.border = "none";
         button3.style.align = "center";
         button3.onclick = function () {
-            const el = document.querySelector('#ide-root');
+            const el = document.querySelector('body');
             // var rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen;
-              el.webkitRequestFullScreen.call(el);
-              return;
+            el.webkitRequestFullScreen(el);
+            var styleElement = document.querySelector('style#fullscreen-style');
+            if (!styleElement) {
+                styleElement = document.createElement('style');
+                styleElement.type = 'text/css';
+                styleElement.innerHTML = ':fullscreen .pdfjs-viewer-inner{overflow-y: auto !important;} :-webkit-full-screen .pdfjs-viewer-inner{overflow-y: auto !important;}';
+                styleElement.id = 'fullscreen-style';
+                document.head.appendChild(styleElement);
+            }
+            return;
         }
         var button4 = document.createElement("button");
         button4.id = "id004";
@@ -141,4 +149,3 @@ function addStyle() {
         tabedit.appendChild(button4);
         addStyle();
 }, 5000);
-})();
