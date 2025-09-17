@@ -71,7 +71,7 @@ function addStyle() {
             if (!styleElement) {
                 styleElement = document.createElement('style');
                 styleElement.type = 'text/css';
-                styleElement.innerHTML = ':fullscreen .pdfjs-viewer-inner{overflow-y: auto !important;} :-webkit-full-screen .pdfjs-viewer-inner{overflow-y: auto !important;}';
+                styleElement.innerHTML = ':fullscreen .pdfjs-viewer-inner{overflow-y: auto !important; align-items: normal !important;} :-webkit-full-screen .pdfjs-viewer-inner{overflow-y: auto !important; align-items: normal !important;}';
                 styleElement.id = 'fullscreen-style';
                 document.head.appendChild(styleElement);
             }
